@@ -4,249 +4,358 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VÉRA | Indian Fashion & Beauty</title>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-
+<title>VÉRA | International Fashion Store</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="topbar">
-    <span>VÉRA WORLDWIDE</span>
-    <span>THE NEW ERA OF FASHION — 2026</span>
-    <span>EXPLORE YOUR STYLE ↗</span>
+  FREE SHIPPING ON ORDERS ABOVE ₹2,999 ✦ NEW SEASON COLLECTION 2026
 </div>
 
-<header class="navbar">
-    <a href="#" class="logo">VÉRA<span>.</span></a>
+<header class="header">
+  <a class="logo" href="#home">VÉRA<span>.</span></a>
 
-    <nav id="navigation">
-        <a href="#home">HOME</a>
-        <a href="#trending">TRENDING</a>
-        <a href="#collection">COLLECTION</a>
-        <a href="#about">ABOUT</a>
-    </nav>
+  <nav id="nav">
+    <a href="#home">HOME</a>
+    <a href="#products">SHOP</a>
+    <a href="#products" data-nav-filter="clothing">CLOTHING</a>
+    <a href="#products" data-nav-filter="shoes">SHOES</a>
+    <a href="#products" data-nav-filter="jewellery">JEWELLERY</a>
+  </nav>
 
-    <a href="#trending" class="nav-button">DISCOVER MORE ↗</a>
-    <button class="menu" id="menu">☰</button>
+  <div class="header-actions">
+    <button id="searchToggle" aria-label="Search">⌕</button>
+    <button id="wishlistTop" aria-label="Wishlist">♡ <span id="wishCount">0</span></button>
+    <button id="cartToggle" aria-label="Shopping cart"> BAG (<span id="cartCount">0</span>)</button>
+  </div>
+
+  <button class="menu" id="menu">☰</button>
 </header>
+
+<div class="search-panel" id="searchPanel">
+  <input id="searchInput" type="search" placeholder="Search jeans, shoes, dresses, jewellery...">
+  <button id="closeSearch">✕</button>
+</div>
 
 <main>
 
-<!-- LUXURY HERO -->
+<!-- HERO -->
 
 <section class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow">THE INTERNATIONAL FASHION EDIT · 2026</span>
+    <h1>FASHION<br>IS YOUR <i>POWER.</i></h1>
+    <p>Discover the latest looks, iconic outfits and statement pieces. Find your next obsession at VÉRA.</p>
+    <a href="#products" class="black-btn">SHOP THE NEW COLLECTION ↗</a>
+    <div class="hero-note">NEW ARRIVALS · STYLE WITHOUT LIMITS</div>
+  </div>
 
-    <div class="hero-bg"></div>
-
-    <div class="hero-left">
-
-        <div class="hero-tag">
-            <span class="live-dot"></span>
-            INDIAN FASHION / ISSUE 01
-        </div>
-
-        <h1>
-            BEAUTY<br>
-            BEYOND<br>
-            <span>ORDINARY.</span>
-        </h1>
-
-        <p class="hero-description">
-            Celebrate elegance, beauty and individuality.
-            Discover stunning fashion inspiration,
-            beautiful portraits and timeless Indian style.
-        </p>
-
-        <div class="hero-actions">
-            <a href="#trending" class="explore-btn">
-                EXPLORE THE COLLECTION ↗
-            </a>
-
-            <a href="#about" class="discover-link">
-                DISCOVER VÉRA
-            </a>
-        </div>
-
-        <div class="hero-bottom">
-            <span>01 — 2026</span>
-            <span>THE ART OF BEAUTY</span>
-        </div>
-
+  <div class="hero-visual">
+    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=750&q=85" alt="International fashion editorial model">
+    <div class="hero-label">
+      <small>THE NEW SEASON</small>
+      <strong>IT'S YOUR<br>TIME TO SHINE.</strong>
+      <a href="#products">DISCOVER MORE ↗</a>
     </div>
-
-    <div class="hero-right">
-
-        <div class="hero-photo photo-main">
-            <img
-            src="https://images.unsplash.com/photo-1749317776467-6dcf2bfbd26b?auto=format&fit=crop&w=1100&q=90"
-            alt="Elegant Indian woman in traditional fashion">
-        </div>
-
-        <div class="hero-photo photo-small">
-            <img
-            src="https://images.unsplash.com/photo-1745237015697-d76c67fd7750?auto=format&fit=crop&w=700&q=90"
-            alt="Indian fashion portrait">
-        </div>
-
-        <div class="photo-caption">
-            <span>THE BEAUTY EDIT</span>
-            <span>VÉRA / 001</span>
-        </div>
-
-        <div class="round-stamp">
-            <span>STYLE</span>
-            <strong>IS</strong>
-            <span>FOREVER</span>
-        </div>
-
-    </div>
-
-    <div class="side-text">
-        FASHION · BEAUTY · CULTURE · ELEGANCE
-    </div>
-
+  </div>
 </section>
 
-<!-- ANIMATED TEXT -->
+<!-- CATEGORY SHORTCUTS -->
 
-<section class="marquee">
-    <div class="marquee-track">
-        <span>INDIAN BEAUTY ✦ TIMELESS ELEGANCE ✦ FASHION FOREVER ✦ </span>
-        <span>INDIAN BEAUTY ✦ TIMELESS ELEGANCE ✦ FASHION FOREVER ✦ </span>
+<section class="categories section">
+  <div class="section-title">
+    <div>
+      <span class="eyebrow">EXPLORE YOUR WORLD</span>
+      <h2>Shop by <i>category.</i></h2>
     </div>
+    <span class="muted">YOUR STYLE STARTS HERE</span>
+  </div>
+
+  <div class="category-grid">
+    <button class="category-card" data-category="clothing">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80" alt="Women's clothing">
+      <span>CLOTHING ↗</span>
+    </button>
+    <button class="category-card" data-category="jeans">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=500&q=80" alt="Denim jeans">
+      <span>DENIM ↗</span>
+    </button>
+    <button class="category-card" data-category="shoes">
+      <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80" alt="Fashion shoes">
+      <span>SHOES ↗</span>
+    </button>
+    <button class="category-card" data-category="jewellery">
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=500&q=80" alt="Jewellery">
+      <span>JEWELLERY ↗</span>
+    </button>
+    <button class="category-card" data-category="bags">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=500&q=80" alt="Fashion handbags">
+      <span>HANDBAGS ↗</span>
+    </button>
+    <button class="category-card" data-category="accessories">
+      <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80" alt="Fashion sunglasses">
+      <span>ACCESSORIES ↗</span>
+    </button>
+  </div>
 </section>
 
-<!-- TRENDING PORTRAITS -->
+<!-- PRODUCTS -->
 
-<section class="trending section" id="trending">
-
-    <div class="section-top">
-        <div>
-            <p class="eyebrow">THE BEAUTY & STYLE REPORT / 2026</p>
-            <h2>Beautiful <i>looks.</i></h2>
-        </div>
-
-        <p>
-            Explore Indian fashion, gorgeous portraits,
-            elegant outfits and contemporary styling.
-        </p>
+<section class="products section" id="products">
+  <div class="section-title">
+    <div>
+      <span class="eyebrow">HANDPICKED FOR YOU</span>
+      <h2>Trending <i>now.</i></h2>
     </div>
+    <span class="muted">VÉRA EDIT · 2026</span>
+  </div>
 
-    <div class="fashion-grid">
-
-        <article class="fashion-card">
-            <div class="fashion-img">
-                <img
-                src="https://images.unsplash.com/photo-1719266316951-167a6ee11423?auto=format&fit=crop&w=850&q=90"
-                alt="Elegant Indian woman wearing a saree">
-                <span>01</span>
-            </div>
-
-            <div class="card-info">
-                <h3>Elegant Sarees</h3>
-                <span>TRADITIONAL ↗</span>
-            </div>
-        </article>
-
-        <article class="fashion-card">
-            <div class="fashion-img">
-                <img
-                src="https://images.unsplash.com/photo-1669829508691-8ce630261b7b?auto=format&fit=crop&w=850&q=90"
-                alt="Indian fashion model portrait">
-                <span>02</span>
-            </div>
-
-            <div class="card-info">
-                <h3>Natural Beauty</h3>
-                <span>PORTRAITS ↗</span>
-            </div>
-        </article>
-
-        <article class="fashion-card">
-            <div class="fashion-img">
-                <img
-                src="https://images.unsplash.com/photo-1749317776467-6dcf2bfbd26b?auto=format&fit=crop&w=850&q=90"
-                alt="Indian woman fashion portrait">
-                <span>03</span>
-            </div>
-
-            <div class="card-info">
-                <h3>Royal Elegance</h3>
-                <span>FASHION ↗</span>
-            </div>
-        </article>
-
+  <div class="shop-toolbar">
+    <div class="filters">
+      <button class="filter active" data-filter="all">ALL</button>
+      <button class="filter" data-filter="clothing">CLOTHING</button>
+      <button class="filter" data-filter="jeans">JEANS</button>
+      <button class="filter" data-filter="shoes">SHOES</button>
+      <button class="filter" data-filter="jewellery">JEWELLERY</button>
+      <button class="filter" data-filter="bags">BAGS</button>
+      <button class="filter" data-filter="accessories">ACCESSORIES</button>
     </div>
+    <span class="result-count" id="resultCount">12 PRODUCTS</span>
+  </div>
 
+  <div class="product-grid" id="productGrid">
+
+    <article class="product-card" data-category="clothing" data-name="Elegant black dress" data-price="2499">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=550&q=85" alt="Elegant black dress">
+        <span class="product-tag">BESTSELLER</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Elegant Black Dress</h3><p>Evening Collection</p></div>
+        <strong>₹2,499</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="jeans" data-name="Classic blue denim" data-price="1899">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=550&q=85" alt="Blue denim jeans">
+        <span class="product-tag">TRENDING</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Classic Blue Denim</h3><p>Wide Leg Fit</p></div>
+        <strong>₹1,899</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="shoes" data-name="Classic heels" data-price="3299">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=550&q=85" alt="Women's heels">
+        <span class="product-tag">NEW</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Classic Heels</h3><p>Signature Footwear</p></div>
+        <strong>₹3,299</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="jewellery" data-name="Golden statement jewellery" data-price="1299">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=550&q=85" alt="Gold jewellery">
+        <span class="product-tag">POPULAR</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Golden Statement Set</h3><p>Jewellery Collection</p></div>
+        <strong>₹1,299</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="bags" data-name="Luxury everyday handbag" data-price="2799">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=550&q=85" alt="Luxury handbag">
+        <span class="product-tag">NEW</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Everyday Luxury Bag</h3><p>Premium Accessories</p></div>
+        <strong>₹2,799</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="accessories" data-name="Retro sunglasses" data-price="999">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=550&q=85" alt="Sunglasses">
+        <span class="product-tag">TRENDING</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Retro Sunglasses</h3><p>Modern Essentials</p></div>
+        <strong>₹999</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="clothing" data-name="Chic summer outfit" data-price="2199">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=550&q=85" alt="Fashion summer outfit">
+        <span class="product-tag">EDITOR'S PICK</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Chic Summer Outfit</h3><p>New Season</p></div>
+        <strong>₹2,199</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="shoes" data-name="Street sneakers" data-price="2599">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=550&q=85" alt="Fashion sneakers">
+        <span class="product-tag">BESTSELLER</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Street Sneakers</h3><p>Urban Collection</p></div>
+        <strong>₹2,599</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="jeans" data-name="Denim streetwear" data-price="1999">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=550&q=85" alt="Denim streetwear">
+        <span class="product-tag">TRENDING</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Denim Streetwear</h3><p>Everyday Style</p></div>
+        <strong>₹1,999</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="jewellery" data-name="Minimal gold necklace" data-price="1499">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=550&q=85" alt="Gold necklace">
+        <span class="product-tag">NEW</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Minimal Gold Necklace</h3><p>Fine Jewellery</p></div>
+        <strong>₹1,499</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="bags" data-name="Chic shoulder bag" data-price="2399">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=550&q=85" alt="Shoulder bag">
+        <span class="product-tag">POPULAR</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Chic Shoulder Bag</h3><p>Daily Luxury</p></div>
+        <strong>₹2,399</strong>
+      </div>
+    </article>
+
+    <article class="product-card" data-category="accessories" data-name="Modern fashion watch" data-price="1899">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=550&q=85" alt="Fashion watch">
+        <span class="product-tag">SPECIAL</span>
+        <button class="heart" aria-label="Add to wishlist">♡</button>
+        <button class="quick-view">QUICK VIEW</button>
+      </div>
+      <div class="product-info">
+        <div><h3>Modern Fashion Watch</h3><p>Signature Accessories</p></div>
+        <strong>₹1,899</strong>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="no-results" id="noResults" hidden>No matching products found. Try another search.</p>
 </section>
 
-<!-- PREMIUM COLLECTION -->
+<!-- EDITORIAL BANNER -->
 
-<section class="collection" id="collection">
-
-    <div class="collection-image">
-        <img
-        src="https://images.unsplash.com/photo-1745237015697-d76c67fd7750?auto=format&fit=crop&w=1200&q=90"
-        alt="Indian fashion editorial">
-    </div>
-
-    <div class="collection-content">
-
-        <p class="eyebrow">THE VÉRA BEAUTY COLLECTION</p>
-
-        <h2>
-            GRACE.<br>
-            BEAUTY.<br>
-            <i>CONFIDENCE.</i>
-        </h2>
-
-        <p>
-            Discover the perfect combination of
-            modern fashion and traditional elegance.
-            Your style tells your story.
-        </p>
-
-        <a href="#trending" class="collection-btn">
-            EXPLORE COLLECTION ↗
-        </a>
-
-    </div>
-
+<section class="editorial">
+  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="International fashion editorial portrait">
+  <div class="editorial-copy">
+    <span class="eyebrow">THE VÉRA EDITORIAL</span>
+    <h2>Dress like<br><i>you mean it.</i></h2>
+    <p>Confidence is always in fashion.</p>
+    <a href="#products" class="black-btn">EXPLORE THE EDIT ↗</a>
+  </div>
 </section>
 
-<!-- ABOUT -->
+<!-- NEWSLETTER -->
 
-<section class="about section" id="about">
-
-    <p class="eyebrow">WELCOME TO VÉRA</p>
-
-    <h2>
-        Elegance is<br>
-        <i>an attitude.</i>
-    </h2>
-
-    <p>
-        VÉRA is a destination for fashion lovers.
-        Discover beautiful portraits, elegant Indian
-        styling, modern trends and timeless inspiration.
-    </p>
-
+<section class="newsletter">
+  <span class="eyebrow">STAY IN STYLE</span>
+  <h2>Fashion updates.<br><i>Only the good ones.</i></h2>
+  <form id="newsletterForm">
+    <input type="email" placeholder="Enter your email address" required>
+    <button type="submit">SUBSCRIBE ↗</button>
+  </form>
+  <p id="newsletterMessage">New collections, trends and style inspiration.</p>
 </section>
 
 </main>
 
 <footer>
-    <a href="#" class="logo">VÉRA<span>.</span></a>
-
-    <p>BE BEAUTIFUL. BE ORIGINAL. BE UNFORGETTABLE.</p>
-
-    <span>© 2026 VÉRA FASHION STUDIO</span>
+  <a href="#home" class="logo">VÉRA<span>.</span></a>
+  <p>FASHION IS AN ATTITUDE.</p>
+  <div class="footer-bottom">
+    <span>© 2026 VÉRA FASHION</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<!-- QUICK VIEW MODAL -->
 
+<div class="modal" id="productModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <img id="modalImage" src="" alt="Selected product">
+    <div class="modal-details">
+      <span class="eyebrow">VÉRA PRODUCT EDIT</span>
+      <h2 id="modalName"></h2>
+      <p id="modalPrice"></p>
+      <p>Discover your personal style with this curated VÉRA selection.</p>
+      <button class="black-btn" id="modalAdd">ADD TO BAG +</button>
+    </div>
+  </div>
+</div>
+
+<!-- SHOPPING BAG DRAWER -->
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-heading">
+    <h2>Your shopping bag</h2>
+    <button id="drawerClose">✕</button>
+  </div>
+  <div id="cartItems"></div>
+  <div class="cart-total">
+    <span>Subtotal</span>
+    <strong id="cartTotal">₹0</strong>
+  </div>
+  <p class="cart-note">Demo shopping cart. Checkout and payments are not connected.</p>
+  <button class="black-btn" id="checkoutButton">CONTINUE SHOPPING</button>
+</aside>
+
+<script src="script.js"></script>
 </body>
 </html>
