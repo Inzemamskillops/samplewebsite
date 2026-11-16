@@ -2,181 +2,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VÉRA | Fashion Trends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VÉRA | Indian Fashion & Beauty</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="announcement">
-    NEW SEASON IS HERE ✦ DISCOVER YOUR STYLE
+<div class="topbar">
+    <span>VÉRA WORLDWIDE</span>
+    <span>THE NEW ERA OF FASHION — 2026</span>
+    <span>EXPLORE YOUR STYLE ↗</span>
 </div>
 
-<header>
+<header class="navbar">
     <a href="#" class="logo">VÉRA<span>.</span></a>
 
     <nav id="navigation">
-        <a href="#home">Home</a>
-        <a href="#trending">Trending</a>
-        <a href="#collection">Collections</a>
-        <a href="#about">About</a>
+        <a href="#home">HOME</a>
+        <a href="#trending">TRENDING</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#about">ABOUT</a>
     </nav>
 
-    <a href="#trending" class="header-btn">Explore Fashion ↗</a>
-
+    <a href="#trending" class="nav-button">DISCOVER MORE ↗</a>
     <button class="menu" id="menu">☰</button>
 </header>
 
+<main>
+
+<!-- LUXURY HERO -->
+
 <section class="hero" id="home">
 
-    <div class="hero-content">
-        <p class="eyebrow">THE FUTURE OF FASHION · 2026</p>
+    <div class="hero-bg"></div>
+
+    <div class="hero-left">
+
+        <div class="hero-tag">
+            <span class="live-dot"></span>
+            INDIAN FASHION / ISSUE 01
+        </div>
 
         <h1>
-            Wear the<br>
-            <em>moment.</em>
+            BEAUTY<br>
+            BEYOND<br>
+            <span>ORDINARY.</span>
         </h1>
 
-        <p class="description">
-            Discover the latest fashion trends, iconic outfits
-            and inspiring styles. Your next favourite look starts here.
+        <p class="hero-description">
+            Celebrate elegance, beauty and individuality.
+            Discover stunning fashion inspiration,
+            beautiful portraits and timeless Indian style.
         </p>
 
-        <div class="hero-buttons">
-            <a href="#trending" class="primary-btn">
-                Discover Trends ↗
+        <div class="hero-actions">
+            <a href="#trending" class="explore-btn">
+                EXPLORE THE COLLECTION ↗
             </a>
 
-            <a href="#collection" class="secondary-btn">
-                Explore Collection ↓
+            <a href="#about" class="discover-link">
+                DISCOVER VÉRA
             </a>
         </div>
+
+        <div class="hero-bottom">
+            <span>01 — 2026</span>
+            <span>THE ART OF BEAUTY</span>
+        </div>
+
     </div>
 
-    <div class="hero-image">
-        <img
-        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85"
-        alt="Fashion model">
+    <div class="hero-right">
 
-        <div class="image-label">
-            THE<br><strong>NEW</strong><br>LOOK
+        <div class="hero-photo photo-main">
+            <img
+            src="https://images.unsplash.com/photo-1749317776467-6dcf2bfbd26b?auto=format&fit=crop&w=1100&q=90"
+            alt="Elegant Indian woman in traditional fashion">
         </div>
+
+        <div class="hero-photo photo-small">
+            <img
+            src="https://images.unsplash.com/photo-1745237015697-d76c67fd7750?auto=format&fit=crop&w=700&q=90"
+            alt="Indian fashion portrait">
+        </div>
+
+        <div class="photo-caption">
+            <span>THE BEAUTY EDIT</span>
+            <span>VÉRA / 001</span>
+        </div>
+
+        <div class="round-stamp">
+            <span>STYLE</span>
+            <strong>IS</strong>
+            <span>FOREVER</span>
+        </div>
+
+    </div>
+
+    <div class="side-text">
+        FASHION · BEAUTY · CULTURE · ELEGANCE
     </div>
 
 </section>
 
-<div class="marquee">
-    <div class="marquee-content">
-        FASHION IS ART ✦ STYLE IS PERSONAL ✦ BE DIFFERENT ✦
-        FASHION IS ART ✦ STYLE IS PERSONAL ✦ BE DIFFERENT ✦
+<!-- ANIMATED TEXT -->
+
+<section class="marquee">
+    <div class="marquee-track">
+        <span>INDIAN BEAUTY ✦ TIMELESS ELEGANCE ✦ FASHION FOREVER ✦ </span>
+        <span>INDIAN BEAUTY ✦ TIMELESS ELEGANCE ✦ FASHION FOREVER ✦ </span>
     </div>
-</div>
+</section>
+
+<!-- TRENDING PORTRAITS -->
 
 <section class="trending section" id="trending">
 
-    <div class="section-heading">
+    <div class="section-top">
         <div>
-            <p class="eyebrow">WHAT'S TRENDING</p>
-            <h2>Trending <em>Looks.</em></h2>
+            <p class="eyebrow">THE BEAUTY & STYLE REPORT / 2026</p>
+            <h2>Beautiful <i>looks.</i></h2>
         </div>
 
         <p>
-            Explore the styles making a statement
-            around the world.
+            Explore Indian fashion, gorgeous portraits,
+            elegant outfits and contemporary styling.
         </p>
-    </div>
-
-    <div class="filters">
-        <button class="filter active" data-filter="all">All Looks</button>
-        <button class="filter" data-filter="men">Men</button>
-        <button class="filter" data-filter="women">Women</button>
-        <button class="filter" data-filter="street">Streetwear</button>
     </div>
 
     <div class="fashion-grid">
 
-        <div class="fashion-card" data-category="women">
-            <div class="fashion-image">
-                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Women's fashion">
+        <article class="fashion-card">
+            <div class="fashion-img">
+                <img
+                src="https://images.unsplash.com/photo-1719266316951-167a6ee11423?auto=format&fit=crop&w=850&q=90"
+                alt="Elegant Indian woman wearing a saree">
                 <span>01</span>
             </div>
-            <h3>Urban Elegance</h3>
-            <p>Modern street fashion</p>
-        </div>
 
-        <div class="fashion-card" data-category="men">
-            <div class="fashion-image">
-                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85" alt="Fashion look">
+            <div class="card-info">
+                <h3>Elegant Sarees</h3>
+                <span>TRADITIONAL ↗</span>
+            </div>
+        </article>
+
+        <article class="fashion-card">
+            <div class="fashion-img">
+                <img
+                src="https://images.unsplash.com/photo-1669829508691-8ce630261b7b?auto=format&fit=crop&w=850&q=90"
+                alt="Indian fashion model portrait">
                 <span>02</span>
             </div>
-            <h3>Classic Confidence</h3>
-            <p>Timeless men's style</p>
-        </div>
 
-        <div class="fashion-card" data-category="street">
-            <div class="fashion-image">
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Streetwear fashion">
+            <div class="card-info">
+                <h3>Natural Beauty</h3>
+                <span>PORTRAITS ↗</span>
+            </div>
+        </article>
+
+        <article class="fashion-card">
+            <div class="fashion-img">
+                <img
+                src="https://images.unsplash.com/photo-1749317776467-6dcf2bfbd26b?auto=format&fit=crop&w=850&q=90"
+                alt="Indian woman fashion portrait">
                 <span>03</span>
             </div>
-            <h3>Street Culture</h3>
-            <p>Express your personality</p>
-        </div>
+
+            <div class="card-info">
+                <h3>Royal Elegance</h3>
+                <span>FASHION ↗</span>
+            </div>
+        </article>
 
     </div>
+
 </section>
+
+<!-- PREMIUM COLLECTION -->
 
 <section class="collection" id="collection">
 
     <div class="collection-image">
-        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1200&q=85" alt="Fashion collection">
+        <img
+        src="https://images.unsplash.com/photo-1745237015697-d76c67fd7750?auto=format&fit=crop&w=1200&q=90"
+        alt="Indian fashion editorial">
     </div>
 
     <div class="collection-content">
-        <p class="eyebrow">THE VÉRA COLLECTION</p>
+
+        <p class="eyebrow">THE VÉRA BEAUTY COLLECTION</p>
 
         <h2>
-            Less rules.<br>
-            <em>More style.</em>
+            GRACE.<br>
+            BEAUTY.<br>
+            <i>CONFIDENCE.</i>
         </h2>
 
         <p>
-            Fashion is not about following everyone.
-            It is about creating your own identity.
-            Discover a new way to express yourself.
+            Discover the perfect combination of
+            modern fashion and traditional elegance.
+            Your style tells your story.
         </p>
 
-        <a href="#trending" class="light-btn">
-            Explore Now ↗
+        <a href="#trending" class="collection-btn">
+            EXPLORE COLLECTION ↗
         </a>
+
     </div>
 
 </section>
 
+<!-- ABOUT -->
+
 <section class="about section" id="about">
-    <p class="eyebrow">OUR PHILOSOPHY</p>
-    <h2>Style is temporary.<br><em>Identity is forever.</em></h2>
+
+    <p class="eyebrow">WELCOME TO VÉRA</p>
+
+    <h2>
+        Elegance is<br>
+        <i>an attitude.</i>
+    </h2>
+
     <p>
-        VÉRA brings together fashion inspiration,
-        modern trends and creative styling.
-        Be confident. Be original. Be yourself.
+        VÉRA is a destination for fashion lovers.
+        Discover beautiful portraits, elegant Indian
+        styling, modern trends and timeless inspiration.
     </p>
+
 </section>
+
+</main>
 
 <footer>
     <a href="#" class="logo">VÉRA<span>.</span></a>
 
-    <p>Good style. No rulebook.</p>
+    <p>BE BEAUTIFUL. BE ORIGINAL. BE UNFORGETTABLE.</p>
 
-    <div class="footer-bottom">
-        <span>© 2026 VÉRA FASHION</span>
-        <span>DESIGNED FOR STYLE LOVERS ✦</span>
-    </div>
+    <span>© 2026 VÉRA FASHION STUDIO</span>
 </footer>
 
 <script src="script.js"></script>
